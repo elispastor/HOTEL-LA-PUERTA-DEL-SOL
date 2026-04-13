@@ -60,7 +60,7 @@
     .videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:20px}
     .video-card{background:rgba(0,0,0,0.5);border-radius:15px;overflow:hidden;transition:transform 0.2s}
     .video-card:hover{transform:scale(1.02)}
-    .video-card video{width:100%;height:auto;display:block}
+    .video-card iframe{width:100%;height:200px;display:block}
     .video-card p{padding:10px;text-align:center;color:#fbbf24}
     
     .gimnasio-section{background:rgba(0,0,0,0.4);border-radius:20px;padding:20px;margin-top:30px}
@@ -88,8 +88,9 @@
     <a href="#inicio" onclick="toggleMenu()">🏠 Inicio</a>
     <a href="#servicios" onclick="toggleMenu()">🛏️ Servicios</a>
     <a href="#mision" onclick="toggleMenu()">🎯 Misión</a>
-    <a href="#habitaciones" onclick="toggleMenu()">🏖️ Galería</a>
+    <a href="#habitaciones" onclick="toggleMenu()">🏖️ Habitaciones</a>
     <a href="#gimnasio" onclick="toggleMenu()">💪 Gimnasio</a>
+    <a href="#videos" onclick="toggleMenu()">🎥 Instalaciones</a>
     <a href="#contacto" onclick="toggleMenu()">📞 Contacto</a>
     <a href="#actualizar" onclick="toggleMenu()">🔄 Actualizar</a>
   </nav>
@@ -128,7 +129,7 @@
   </section>
   
   <section id="habitaciones" class="card">
-    <h2 style="color:#fbbf24;text-align:center;font-size:2rem;margin-bottom:20px;">🏖️ Galería de Fotos</h2>
+    <h2 style="color:#fbbf24;text-align:center;font-size:2rem;margin-bottom:20px;">🏖️ Nuestras Habitaciones</h2>
     <div class="carrusel">
       <div class="carrusel-slide active"><img src="foto1.jpeg" alt="Hotel"></div>
       <div class="carrusel-slide"><img src="foto2.jpeg" alt="Hotel"></div>
@@ -142,7 +143,6 @@
     </div>
   </section>
   
- 
   <section id="gimnasio" class="card">
     <div class="gimnasio-section">
       <h2 class="gimnasio-title">💪 Gimnasio del Hotel</h2>
@@ -150,6 +150,32 @@
         <img src="foto10.jpeg" alt="Gimnasio Hotel La Puerta del Sol">
       </div>
       <p class="gimnasio-desc">Mantente en forma durante tu estancia. Contamos con equipamiento moderno y un espacio diseñado para tu bienestar.</p>
+    </div>
+  </section>
+  
+  <section id="videos" class="card">
+    <h2 style="color:#fbbf24;text-align:center;font-size:2rem;margin-bottom:20px;">🎥 Nuestras Instalaciones</h2>
+    <div class="videos-grid">
+      <div class="video-card">
+        <iframe src="https://drive.google.com/file/d/1sdcxlMpFGKwW5DyQCvnZEOSGti8JXSAY/preview" frameborder="0" allowfullscreen></iframe>
+        <p>Video 1</p>
+      </div>
+      <div class="video-card">
+        <iframe src="https://drive.google.com/file/d/1YnXHU06TQhikhRz3wiiNwlxwkx73MZuB/preview" frameborder="0" allowfullscreen></iframe>
+        <p>Video 2</p>
+      </div>
+      <div class="video-card">
+        <iframe src="https://drive.google.com/file/d/1qpDs8M-jr1k6HQmLSUy89lrVl66s75g5/preview" frameborder="0" allowfullscreen></iframe>
+        <p>Video 3</p>
+      </div>
+      <div class="video-card">
+        <iframe src="https://drive.google.com/file/d/1z1tWydRgzKa9e29dgpEQzxzxJP1hPoMS/preview" frameborder="0" allowfullscreen></iframe>
+        <p>Video 4</p>
+      </div>
+      <div class="video-card">
+        <iframe src="https://drive.google.com/file/d/1rtZDVXHEK512nDa3lUMsIPEYSjjIlodi/preview" frameborder="0" allowfullscreen></iframe>
+        <p>Video 5</p>
+      </div>
     </div>
   </section>
   
